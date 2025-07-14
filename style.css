@@ -1,0 +1,71 @@
+ body {
+      background: #ffe6f2;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      font-family: "Comic Sans MS", cursive;
+    }
+
+    .eye-container {
+      display: flex;
+      gap: 60px;
+    }
+
+    .eye {
+      width: 100px;
+      height: 100px;
+      background: #fff;
+      border: 4px solid #ff99cc;
+      border-radius: 50%;
+      position: relative;
+      box-shadow: inset 0 0 10px #ffddee;
+    }
+
+    .eyeball {
+      width: 30px;
+      height: 30px;
+      background: #333;
+      border-radius: 50%;
+      position: absolute;
+      top: 35px;
+      left: 35px;
+      transition: 0.05s;
+    }
+
+    .eyelashes {
+      position: absolute;
+      top: -15px;
+      left: 8px;
+      width: 84px;
+      height: 20px;
+      display: flex;
+      justify-content: space-between;
+      pointer-events: none;
+    }
+
+    .lash {
+      width: 2px;
+      height: 15px;
+      background: #cc6699;
+      border-radius: 10px;
+      transform-origin: bottom center;
+    }
+
+    .lash:nth-child(1) { transform: rotate(-35deg); }
+    .lash:nth-child(2) { transform: rotate(-15deg); }
+    .lash:nth-child(3) { transform: rotate(0deg); }
+    .lash:nth-child(4) { transform: rotate(15deg); }
+    .lash:nth-child(5) { transform: rotate(35deg); }
+
+    .eyebrow {
+      width: 70px;
+      height: 30px;
+      border-top: 5px solid #cc66a1;
+      border-radius: 50%/100%;
+      position: absolute;
+      top: -35px;
+      left: 15px;
+      transform: rotate(0deg);
+    }
